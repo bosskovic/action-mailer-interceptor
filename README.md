@@ -10,7 +10,7 @@ in Gemfile:
 in `config/initializers/actionmailer_interceptor.rb`:
 
 ```
-interceptor = ActionmailerInterceptor::MailerInterceptor.new(redirection_email: my_email@example.com)
+interceptor = ActionmailerInterceptor::MailerInterceptor.new(redirection_email: 'my_email@example.com')
 
 if Rails.env.development? || Rails.env.staging?
   ActionMailer::Base.register_interceptor(interceptor)
