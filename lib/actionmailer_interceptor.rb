@@ -1,0 +1,2 @@
+require 'actionmailer_interceptor/mailer_interceptor'
+require 'actionmailer_interceptor/version'

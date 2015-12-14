@@ -1,4 +1,4 @@
-module ActionMailerInterceptor
+module ActionmailerInterceptor
   class MailInterceptor
     attr_accessor :redirection_email
 

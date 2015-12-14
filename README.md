@@ -1,18 +1,18 @@
-# action_mailer_interceptor
+# actionmailer_interceptor
 Intercepts and forwards emails to the given address in the specified environments
 
 # installation
 
 in Gemfile:
 
-`gem 'action_mailer_interceptor'
+`gem 'actionmailer_interceptor'
 
-in `config/initializers/action_mailer_interceptor.rb`:
+in `config/initializers/actionmailer_interceptor.rb`:
 
 ```
-interceptor = ActionMailerInterceptor::MailerInterceptor.new(redirection_email: my_email@example.com)
+interceptor = ActionmailerInterceptor::MailerInterceptor.new(redirection_email: my_email@example.com)
 
-unless (Rails.env.test? || Rails.env.production?)
+if Rails.env.development? || Rails.env.staging?
   ActionMailer::Base.register_interceptor(interceptor)
 end
 ```
