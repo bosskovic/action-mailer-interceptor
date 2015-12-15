@@ -5,7 +5,7 @@ Intercepts and forwards emails to the given address in the specified environment
 
 in Gemfile:
 
-`gem 'actionmailer_interceptor'
+`gem 'actionmailer_interceptor'``
 
 in `config/initializers/actionmailer_interceptor.rb`:
 
